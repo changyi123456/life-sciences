@@ -51,7 +51,7 @@
             <h1 class="text-3xl font-bold tracking-wider flex items-center justify-center relative z-10">
                 <span class="mr-3 text-4xl">🔬</span> 植物培养虚拟实验室
             </h1>
-            <p class="mt-2 text-green-100 relative z-10">实体实验前置模拟训练系统</p>
+            <p class="mt-2 text-green-100 relative z-10">真实前置模拟训练系统</p>
         </div>
         
         <div class="flex flex-row text-lg">
@@ -70,7 +70,7 @@
         <!-- ==================== 模式一：水培 ==================== -->
         <div id="level1-content" class="block animate-fade-in">
             <h2 class="text-2xl font-bold text-gray-800 mb-2">室内水培：叶菜类 (如生菜) 培育模拟</h2>
-            <p class="text-gray-600 mb-6 border-l-4 border-blue-500 pl-3">学习目标：掌握室内植物工厂的营养液调配，探究叶菜类特有变因（如抽薹、光抑制）及水位对溶氧的影响。</p>
+            <p class="text-gray-600 mb-6 border-l-4 border-blue-500 pl-3">学习目标：掌握室内植物工厂的营养液调配，探究叶菜类特有影響因素（如抽薹、光抑制）及水位对溶氧的影响。</p>
 
             <div class="flex flex-col md:flex-row gap-8">
                 <!-- 左侧：视觉化操作区 -->
@@ -167,7 +167,7 @@
                             <!-- 光照 (Lux) -->
                             <div>
                                 <div class="flex justify-between mb-1">
-                                    <label class="text-sm font-bold text-gray-700">💡 LED 光照强度 (24h连续)</label>
+                                    <label class="text-sm font-bold text-gray-700">💡 LED 光照强度 (12h连续)</label>
                                     <span id="h-light-val" class="text-yellow-600 font-bold text-sm">10000 Lux</span>
                                 </div>
                                 <input type="range" id="h-light-slider" min="0" max="30000" step="1000" value="10000" oninput="updateHydroEnvUI()">
@@ -204,7 +204,7 @@
                             <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-md text-xs border border-yellow-200 shadow-sm">🌾 严重徒长 (光不足)</span>
                             <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded-md text-xs border border-orange-200 shadow-sm">🔥 生理疲劳 (光过载)</span>
                             <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-md text-xs border border-blue-200 shadow-sm">🧊 低温停滞</span>
-                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded-md text-xs border border-red-200 shadow-sm">🥀 抽薹 / 热胁迫</span>
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded-md text-xs border border-red-200 shadow-sm">🥀 抽苔 / 热胁迫</span>
                             <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-md text-xs border border-purple-200 shadow-sm">🦠 根腐病 (缺氧)</span>
                             <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded-md text-xs border border-gray-200 shadow-sm">🍂 水肥胁迫 (干旱)</span>
                         </div>
@@ -216,7 +216,7 @@
 
         <!-- ==================== 模式二：土培 ==================== -->
         <div id="level2-content" class="hidden animate-fade-in">
-            <h2 class="text-2xl font-bold text-gray-800 mb-2">室内土培：叶菜类气候变因测试</h2>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">室内土培：叶菜类气候影響因素测试</h2>
             <p class="text-gray-600 mb-6 border-l-4 border-green-500 pl-3">学习目标：探究温度、湿度、LED光照对室内盆栽叶菜类生理机制（如蒸腾拉力、心腐病、避荫反应）的具体影响。</p>
 
             <div class="flex flex-col md:flex-row gap-8">
@@ -267,7 +267,7 @@
                         <!-- 光照 (Lux) -->
                         <div>
                             <div class="flex justify-between mb-2">
-                                <label class="font-bold text-gray-700 text-sm">💡 LED 光照强度 (24h连续)</label>
+                                <label class="font-bold text-gray-700 text-sm">💡 LED 光照强度 (12h连续)</label>
                                 <span id="s-light-val" class="text-yellow-600 font-bold">10000 Lux</span>
                             </div>
                             <input type="range" id="s-light-slider" min="0" max="30000" step="1000" value="10000" oninput="updateSoilUI()">
@@ -294,7 +294,7 @@
                             <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-md text-xs border border-yellow-200 shadow-sm">🌾 徒长 (光不足)</span>
                             <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded-md text-xs border border-orange-200 shadow-sm">🔥 疲劳 / 叶片黄化</span>
                             <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-md text-xs border border-blue-200 shadow-sm">🧊 冷害</span>
-                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded-md text-xs border border-red-200 shadow-sm">🥀 抽薹 / 叶缘焦枯</span>
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded-md text-xs border border-red-200 shadow-sm">🥀 抽苔 / 叶缘焦枯</span>
                             <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-md text-xs border border-purple-200 shadow-sm">🦠 心腐病 / 烂根</span>
                             <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded-md text-xs border border-gray-200 shadow-sm">🍂 物理干旱萎蔫</span>
                         </div>
