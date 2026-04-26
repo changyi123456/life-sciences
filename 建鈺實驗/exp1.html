@@ -518,12 +518,12 @@
                     rEmoji = '🌾'; rStatus = '严重徒长 (DLI不足)';
                     rColor = 'bg-yellow-600'; rBorder = 'border-yellow-300 bg-yellow-50 text-yellow-900';
                     plantStyle += 'scale-y-150 scale-x-75 -translate-y-4';
-                    rDesc = `☀️ <b>生理机制：</b> 在 <b>24小时连续光照</b> 条件下，若光强度仍低于 4000 Lux，每日光积分 (DLI) 依旧无法达标。植物为寻找光源发生避荫反应，茎秆细长脆弱。`;
+                    rDesc = `☀️ <b>生理机制：</b> 在 <b>12小时光照</b> 条件下，若光强度仍低于 4000 Lux，每日光积分 (DLI) 依旧无法达标。植物为寻找光源发生避荫反应，茎秆细长脆弱。`;
                 } else if (light > 20000) {
                     rEmoji = '🔥'; rStatus = '生理疲劳 / 光抑制';
                     rColor = 'bg-orange-600'; rBorder = 'border-orange-300 bg-orange-50 text-orange-900';
                     plantStyle += 'scale-110 brightness-75';
-                    rDesc = `☀️ <b>生理机制：</b> <b>无暗期 (Dark period) 的 24小时连续照射</b> 极度考验植物耐受力。超过 20000 Lux 连续照射会导致 DLI 严重超标。光合机构因无法休息修复而产生过多自由基（光抑制），提早老化发黄。`;
+                    rDesc = `☀️ <b>生理机制：</b> <b>无暗期 (Dark period) 的 12小时照射</b> 极度考验植物耐受力。超过 20000 Lux 连续照射会导致 DLI 严重超标。光合机构因无法休息修复而产生过多自由基（光抑制），提早老化发黄。`;
                 } else if (waterLvl > 85) {
                     rEmoji = '🦠'; rStatus = '根腐病 (缺氧烂根)';
                     rColor = 'bg-purple-600'; rBorder = 'border-purple-300 bg-purple-50 text-purple-900';
@@ -615,18 +615,18 @@
                     rEmoji = '🌾'; rStatus = '徒长 (DLI不足)';
                     rColor = 'bg-yellow-600'; rBorder = 'border-yellow-300 bg-yellow-50 text-yellow-900';
                     plantContainer.classList.add('scale-y-125', 'scale-x-75', '-translate-y-4');
-                    rDesc = `☀️ <b>生理机制：</b> 即使是 24 小时连续光照，若低于 4000 Lux 总辐射量依然不足。光敏素侦测到弱光促使生长素积累，驱动茎干极度纵向伸长以寻找光源，植株细弱。`;
+                    rDesc = `☀️ <b>生理机制：</b> 即使是 12 小时光照，若低于 4000 Lux 总辐射量依然不足。光敏素侦测到弱光促使生长素积累，驱动茎干极度纵向伸长以寻找光源，植株细弱。`;
                 } else if (light > 20000) {
                     rEmoji = '🔥'; rStatus = '生理疲劳 / 叶片黄化';
                     rColor = 'bg-orange-600'; rBorder = 'border-orange-300 bg-orange-50 text-orange-900';
                     plantContainer.classList.add('scale-110', 'brightness-75');
-                    rDesc = `☀️ <b>生理机制：</b> <b>24小时连续光照缺少暗期</b>。超过 20000 Lux 连续照射会使 DLI 过载，超出室内叶菜类光合系统的负荷，产生自由基破坏叶绿体（光抑制），导致叶片提早受损。`;
+                    rDesc = `☀️ <b>生理机制：</b> <b>12小时光照缺少暗期</b>。超过 20000 Lux 连续照射会使 DLI 过载，超出室内叶菜类光合系统的负荷，产生自由基破坏叶绿体（光抑制），导致叶片提早受损。`;
                 } else {
                     rEmoji = '🌿'; rStatus = '翠绿茂盛 (生长完美)';
                     rColor = 'bg-green-500'; rBorder = 'border-green-300 bg-green-50 text-green-900';
                     plantContainer.classList.add('scale-110');
                     
-                    rDesc = `✨ <b>科学分析：</b> 环境条件极佳！<br>• 温湿度适宜，维持了优秀的蒸腾拉力。<br>• <b>最佳化的 24h 连续光照（${light} Lux）</b>。植物在无间断的适中光照下积累了完美的 DLI，叶片宽大翠绿！`;
+                    rDesc = `✨ <b>科学分析：</b> 环境条件极佳！<br>• 温湿度适宜，维持了优秀的蒸腾拉力。<br>• <b>最佳化的 12h 光照（${light} Lux）</b>。植物在无间断的适中光照下积累了完美的 DLI，叶片宽大翠绿！`;
                 }
 
                 plantContainer.innerHTML = (rEmoji==='🌾')?'🌱':(rEmoji==='🔥'?'🥀':rEmoji);
