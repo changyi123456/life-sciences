@@ -167,7 +167,7 @@
                             <!-- 光照 (Lux) -->
                             <div>
                                 <div class="flex justify-between mb-1">
-                                    <label class="text-sm font-bold text-gray-700">💡 LED 光照强度 (12h连续)</label>
+                                    <label class="text-sm font-bold text-gray-700">💡 光照强度 (12h连续)</label>
                                     <span id="h-light-val" class="text-yellow-600 font-bold text-sm">10000 Lux</span>
                                 </div>
                                 <input type="range" id="h-light-slider" min="0" max="30000" step="1000" value="10000" oninput="updateHydroEnvUI()">
@@ -216,7 +216,7 @@
 
         <!-- ==================== 模式二：土培 ==================== -->
         <div id="level2-content" class="hidden animate-fade-in">
-            <h2 class="text-2xl font-bold text-gray-800 mb-2">室内土培：叶菜类气候影响因素测试</h2>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">室外土培：叶菜类气候影响因素测试</h2>
             <p class="text-gray-600 mb-6 border-l-4 border-green-500 pl-3">请同学调整不同参数看看植物生长结果。</p>
 
             <div class="flex flex-col md:flex-row gap-8">
@@ -267,7 +267,7 @@
                         <!-- 光照 (Lux) -->
                         <div>
                             <div class="flex justify-between mb-2">
-                                <label class="font-bold text-gray-700 text-sm">💡 LED 光照强度 (12h连续)</label>
+                                <label class="font-bold text-gray-700 text-sm">💡 光照强度 (12h连续)</label>
                                 <span id="s-light-val" class="text-yellow-600 font-bold">10000 Lux</span>
                             </div>
                             <input type="range" id="s-light-slider" min="0" max="30000" step="1000" value="10000" oninput="updateSoilUI()">
